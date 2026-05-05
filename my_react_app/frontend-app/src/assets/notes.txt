@@ -1,0 +1,42 @@
+React JS
+--------
+    ->React JS is the small is library
+
+    FEATURES:
+       ->React JS is the component Based
+       ->It supports Virtual DOM
+       ->Using React JS we can build (spa)single page of applications
+       ->React JS will follow defining algorithm
+
+    lIBRARRY:
+        ->collection of code is called as library
+        ->EX:react JS,jQuary,anima JS...etc
+    FRAMEWORKS:
+        ->Collection of libraries is called as FRAMEWORKS
+        ->Angular JS,next JS,nest JS,ExpressJS,Electron JS,vue JS
+
+JSX(javascript and XML[extendable markup language]):
+   ->React will understand JSX code but browsers will not understand JSXA IT understand only JS code(because every browsers having JS engin's)
+   ->To convert JSX code to JS(javascript) we have next-generation compiler called "babel JS"
+
+
+   ->JSX is similar to html,here it allow both JS and HTML code
+
+   RULES:
+   ------
+        ->JSX filenames is always starts with capital letters
+        ->here we can achieve javascript expression ->{}
+        ->In return function HTML elements contains parentTag
+        ->JSX wii allow empty fragments (<> </>)
+
+
+  COMPONENTS IN  React:
+  ------------------
+    ->components are the smallest UI blocks called as component
+
+    TYPES:
+    ------
+    1.Class Based components
+         ->componentare declared by using class keyword is called as class based components
+         ->In CBC constructions,superkeyword,this keyword is present also render() , and life cycle methods are present
+         ->in CBC states are present so that's why is called as a statefull components

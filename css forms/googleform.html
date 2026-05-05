@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Form</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: #f0ebf8;
+      }
+
+      .container {
+        width: 700px;
+        margin: 30px auto;
+      }
+
+      .form-box {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        margin-bottom: 15px;
+        overflow: hidden;
+      }
+
+      .top-line {
+        height: 10px;
+        background: #673ab7;
+      }
+
+      .header {
+        padding: 25px;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 32px;
+      }
+
+      .header p {
+        color: #555;
+        margin-top: 10px;
+      }
+
+      .question {
+        padding: 25px;
+      }
+
+      .question label {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 12px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        outline: none;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        border-bottom: 2px solid #673ab7;
+      }
+
+      .options {
+        margin-top: 10px;
+      }
+
+      .options input {
+        margin-right: 10px;
+      }
+
+      button {
+        background: #673ab7;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #5a2ea6;
+      }
+
+      .footer {
+        text-align: center;
+        color: #666;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <div class="top-line"></div>
+        <div class="header">
+          <h1>Survey Form</h1>
+        </div>
+      </div>
+
+      <form>
+        <div class="form-box">
+          <div class="question">
+            <label>1. Full Name *</label>
+            <input type="text" required />
+          </div>
+        </div>
+
+        <div class="form-box">
+          <div class="question">
+            <label>2. Email Address *</label>
+            <input type="email" required />
+          </div>
+        </div>
+
+        <div class="form-box">
+          <div class="question">
+            <label>3. Gender *</label>
+            <div class="options">
+              <input type="radio" name="gender" /> Male <br /><br />
+              <input type="radio" name="gender" /> Female <br /><br />
+              <input type="radio" name="gender" /> Other
+            </div>
+          </div>
+        </div>
+
+        <div class="form-box">
+          <div class="question">
+            <label>4. Favorite Subject</label>
+            <select>
+              <option>Select</option>
+              <option>Math</option>
+              <option>Science</option>
+              <option>English</option>
+              <option>Computer</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-box">
+          <div class="question">
+            <label>5. Feedback</label>
+            <textarea rows="4"></textarea>
+          </div>
+        </div>
+
+        <div style="padding: 10px 0">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
+    
+</body>
+</html>

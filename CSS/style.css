@@ -1,0 +1,9 @@
+form{
+    padding: 40px;
+    background-color: blue;
+}
+fieldset{
+    border-radius: 60px;
+    background-color: blueviolet;
+    padding: 20px;
+}

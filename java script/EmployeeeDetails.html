@@ -1,0 +1,63 @@
+<body>
+    
+    <h1>EMP Details</h1>
+    <input type="search" id="input" placeholder="search employee">
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr bgcolor="orange">
+            <th>Name</th>
+            <th>Role</th>
+            <th>Salary</th>
+            <th>Address</th>
+            <th>phno</th>
+        </tr>
+        </thead>
+      <tbody>
+        <tr>
+            <td>nikitha</td>
+            <td>dev</td>
+            <td>50000</td>
+            <td>vizag</td>
+            <td>3636363</td>
+        </tr>
+        <tr>
+            <td>xyz</td>
+            <td>lead</td>
+            <td>22222</td>
+            <td>vzm</td>
+            <td>3636336</td>
+        </tr>
+        <tr>
+            <td>yzx</td>
+            <td>test engineer</td>
+            <td>444666</td>
+            <td>vizag</td>
+            <td>474747</td>
+        </tr>
+      </tbody>
+      </table>
+      <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt culpa molestiae inventore deleniti quidem nesciunt animi? Veniam sed dolorum eum blanditiis ipsam dolore aliquam hic numquam doloribus. Tempora, explicabo itaque?</P>
+      <button onclick="disappearParagraph()">click here</button>
+      <script>
+         function disappearParagraph(){
+            let para = document.querySelector("p");
+            para.style.display = (para.style.display == "block") ? "none" : "block"
+         }
+        let rows=document.querySelectorAll("tbody tr");
+         row[0].style.backgroundColor
+        let input=document.querySelector("input");
+        
+        input.addEventListener('keyup',()=>{
+            let inputText=input.value.toLowerCase()
+       rows.forEach((row) => {
+        let rowData=row.textContent;
+           let result = rowData.toLowerCase().includes(inputText);
+           console.log(result);
+           row.style.display =result ? "" : "none"
+        })
+    })
+
+    
+      </script>
+    
+</body>

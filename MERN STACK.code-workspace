@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "css forms"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MERN STACK"
+	}
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+
+        ol{
+            padding: 20px 0px ;
+            
+            display: flex;
+            list-style: none;
+            justify-content:space-evenly;
+            
+            flex-direction: row;
+            background-color: purple;
+            flex-wrap: wrap;
+        }
+
+        li{
+            color: aliceblue;
+            background-color: blue;
+            padding: 10px;
+            font-weight: bold;
+            font-style: italic;
+            text-shadow: 2px 2px 2px black ;
+            border-radius: 8px;
+            flex-grow: 1;
+            margin: 10px 30px;
+            text-align: center;
+        }
+
+        video{
+            height:500px;
+            width: 100vw;
+            
+        }
+
+        #electronic-devices{
+            padding-top: 100px;
+            
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+            bottom: 150px;
+            backdrop-filter: blur(10px);
+
+        }
+
+        #electronic-devices>div{
+            height:450px;
+            width: 350px;
+            border: 5px solid yellow;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            padding: 10px 20px;
+            background-color: rgb(103, 103, 172);
+
+            animation-name: moving;
+            animation-duration: 4s;
+        }
+        #product-card img{
+            height: 200px;
+            border-radius: 20px;
+            
+        }
+
+        .product-info h4, p{
+            color: aliceblue;
+            margin-left: 25px;
+            font-style: italic;
+
+        }
+
+        .button-container>button{
+            padding: 10px 20px;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 8px;
+            border: none;
+            margin:0px 20px;
+            font-style: italic;
+            font-size: 19px;
+
+        }
+
+        .button-container>button:first-child{
+            background-color: rgb(111, 58, 158);
+
+        }
+
+        .button-container>button:last-child{
+            background-color: coral;
+        }
+
+        h1{
+            position: absolute;
+            top: 150px;
+            left: 350px;
+            color: aliceblue;
+            text-shadow: 4px 4px 4px black;
+            padding: 10px 30px ;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px  magenta;
+            animation-name: scaling;
+            animation-duration: 3s;
+            
+        }
+        
+        nav{
+            position: sticky !important;
+            top: 0;
+            z-index: 2;
+        }
+
+        #electronic-devices-section{
+            position: relative;
+            bottom: 80px;
+            font-size: 40px;
+            
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: flex;
+        
+            z-index: 1;
+            left: 40px;
+
+
+        }
+
+        #electronic-devices-section:hover{
+            text-decoration: underline;
+            text-shadow: 2px 2px 2px aliceblue;
+            color: rgb(225, 123, 123);
+            cursor: pointer;
+            transform: scaleY(1.5);
+        }
+
+        #product-card img:hover{
+            transform: skew(10deg);
+            box-shadow:2px 2px 8px aliceblue ;
+        }
+
+    aside img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+            
+        }
+
+        aside{
+            border: 2px solid black;
+            padding: 25px 10px;
+            margin-left: 10px;
+            display: inline-flex;
+            border-radius: 50px;
+            flex-direction: column;
+            position: fixed;
+            top: 40%;
+            height: 200px;
+            justify-content: space-evenly;
+            z-index: 1;
+            background-image: radial-gradient(transparent,pink);
+            
+
+        }
+
+        aside img:hover{
+
+            cursor:pointer;
+            box-shadow: 2px 2px 5px black;
+            transform: translateX(10px);
+            
+            
+        }
+
+        @keyframes scaling{
+            0%{
+                transform:scale(0);
+                color: pink;
+            }
+
+            25%{
+                transform: rotate(0deg);
+            }
+
+            70%{
+                transform: rotate(360deg);
+                color: blue;
+            }
+            100%{
+                transform:scale(1) ;
+                color: yellow;
+            }
+        }
+
+        @keyframes moving{
+            from{
+                transform: translateY(200px);
+            }
+            to {
+                transform: translate(0px);
+            }
+        }
+        body{
+            background-color: aquamarine;
+            animation-name: bgcolorchange;
+            animation-duration: 4s;
+
+        }
+        @keyframes bgcolorchange{
+            0%{
+                background-color: aliceblue;
+            }
+            10%{
+                background-color:green ;
+            }
+            20%{
+                background-color: blueviolet;
+            }
+            30%{
+                background-color: brown;
+            }
+            50%{
+                background-color: black;
+            }
+            }
+ 
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ol>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+            <li>HELP</li>
+            <li>LOGIN</li>
+        </ol>
+    </nav>
+    <main>
+        
+        
+        <section id="background-video">
+            <video src="./WhatsApp Video 2026-04-21 at 9.56.53 PM.mp4" autoplay></video>
+        </section>
+            <section>
+                <h1>Welcome to E-COMMERCWE PLATFORM</h1>
+            </section>
+            <h2 id="electronic-devices-section">Electronic Devices</h2>
+        <section id="electronic-devices">
+        <div id="product-card">
+                <img src="https://m.media-amazon.com/images/I/61zWFTCfWeL._AC_UF1000,1000_QL80_.jpg" alt="">
+            
+          
+            <div class="product-info">
+                <h4>Name: Laptop</h4>
+                <h4>Cost: 50000</h4>
+                <h4>Ratings: 4.5/5</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error accusamus odio exercitationem maiores eius ducimus soluta, labore atque, inventore, voluptatum optio dolorum quae! Explicabo impedit laboriosam cum porro labore animi.</p>
+            </div>
+            
+            
+            <div class="button-container">
+                <button>Buy</button>
+                <button>Add to cart</button>
+            </div>
+            </div>
+            </div>
+            
+        
+            <div id="product-card">
+                <img src="https://m.media-amazon.com/images/I/61zWFTCfWeL._AC_UF1000,1000_QL80_.jpg" alt="">
+            
+          
+            <div class="product-info">
+                <h4>Name: Laptop</h4>
+                <h4>Cost: 50000</h4>
+                <h4>Ratings: 4.5/5</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error accusamus odio exercitationem maiores eius ducimus soluta, labore atque, inventore, voluptatum optio dolorum quae! Explicabo impedit laboriosam cum porro labore animi.</p>
+            </div>
+            
+            
+            <div class="button-container">
+                <button>Buy</button>
+                <button>Add to cart</button>
+            </div>
+            </div>
+            </div>
+
+            <div id="product-card">
+                <img src="https://m.media-amazon.com/images/I/61zWFTCfWeL._AC_UF1000,1000_QL80_.jpg" alt="">
+            
+          
+            <div class="product-info">
+                <h4>Name: Laptop</h4>
+                <h4>Cost: 50000</h4>
+                <h4>Ratings: 4.5/5</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error accusamus odio exercitationem maiores eius ducimus soluta, labore atque, inventore, voluptatum optio dolorum quae! Explicabo impedit laboriosam cum porro labore animi.</p>
+            </div>
+            
+            
+            <div class="button-container">
+                <button>Buy</button>
+                <button>Add to cart</button>
+            </div>
+            </div>
+            </div>
+
+
+            <div id="product-card">
+                <img src="https://m.media-amazon.com/images/I/61zWFTCfWeL._AC_UF1000,1000_QL80_.jpg" alt="">
+            
+          
+            <div class="product-info">
+                <h4>Name: Laptop</h4>
+                <h4>Cost: 50000</h4>
+                <h4>Ratings: 4.5/5</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error accusamus odio exercitationem maiores eius ducimus soluta, labore atque, inventore, voluptatum optio dolorum quae! Explicabo impedit laboriosam cum porro labore animi.</p>
+            </div>
+            
+            
+            <div class="button-container">
+                <button>Buy</button>
+                <button>Add to cart</button>
+            </div>
+            </div>
+            </div>
+
+
+            <div id="product-card">
+                <img src="https://m.media-amazon.com/images/I/61zWFTCfWeL._AC_UF1000,1000_QL80_.jpg" alt="">
+            
+          
+            <div class="product-info">
+                <h4>Name: Laptop</h4>
+                <h4>Cost: 50000</h4>
+                <h4>Ratings: 4.5/5</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error accusamus odio exercitationem maiores eius ducimus soluta, labore atque, inventore, voluptatum optio dolorum quae! Explicabo impedit laboriosam cum porro labore animi.</p>
+            </div>
+            
+            
+            <div class="button-container">
+                <button>Buy</button>
+                <button>Add to cart</button>
+            </div>
+            </div>
+            </div>
+
+            <div id="product-card">
+                <img src="https://m.media-amazon.com/images/I/61zWFTCfWeL._AC_UF1000,1000_QL80_.jpg" alt="">
+            
+          
+            <div class="product-info">
+                <h4>Name: Laptop</h4>
+                <h4>Cost: 50000</h4>
+                <h4>Ratings: 4.5/5</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error accusamus odio exercitationem maiores eius ducimus soluta, labore atque, inventore, voluptatum optio dolorum quae! Explicabo impedit laboriosam cum porro labore animi.</p>
+            </div>
+            
+            
+            <div class="button-container">
+                <button>Buy</button>
+                <button>Add to cart</button>
+            </div>
+            </div>
+            </div>
+        </section>
+        <section>
+            <aside>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/1280px-Logo_of_YouTube_%282015-2017%29.svg.png" alt="">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYTLRluQ369jRaRaYBdh65haTY6eG_Agozg&s" alt="">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaPqHW4lbuPgbeJ2saT_exfxRBpVXIa03c1A&s" alt="">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/960px-Logo_of_Twitter.svg.png" alt="">
+            </aside>
+        </section>
+    </main>
+</body>
+</html>
