@@ -1,0 +1,12 @@
+NODEJS:
+-------
+   ->NODEJS is the run time server side js runtime environmnet
+   ->Using node js we can build server(http core model)
+
+RUN JS FILE:
+------------
+    ->command->node filename
+
+USER DEFINED MODULES:
+--------------------
+    ->Any function defined by uswr is known as user defined 

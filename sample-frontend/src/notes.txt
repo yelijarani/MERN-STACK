@@ -1,0 +1,19 @@
+tailwind:
+   -->It is the frontend framework used to build responsive(frontend) UI
+   -->Less boiler plate
+   -->Responsiveness is memorize
+   -->We can override the code stylings
+
+
+USE MEMO():
+    It will increase performance of the application
+->use memo() is used to the memorize large amount of the calculatives
+->It will prevent Re-rendering of the component of the unneccssarly
+->
+
+
+SYNTAX:
+   usememo(()=>{},
+
+   CONTEXT API:
+         ->
