@@ -9,4 +9,46 @@ RUN JS FILE:
 
 USER DEFINED MODULES:
 --------------------
-    ->Any function defined by uswr is known as user defined 
+    ->Any function defined by uswr is known as user defined MODULES
+    ->Export modules from one file to another:
+
+        SYNTAX:
+          module.export =moduleName
+
+    ->import expoerted module:
+              SYNTAX:
+                 const{moduleName,moduleName2} = require("filename")
+
+
+ NODE CORE INBUILT MOULES(core modules):
+ ->core modules is the inbuilt modules no need to required install externally   
+ 1.fs module (file system)
+        -----------------
+               ->fs module allows raeding,writing,updating and deleting the files
+
+        2.path 
+        3.os 
+        4.http
+
+    Inbuilt Methods:
+    -----------------
+      1.fs.readfile()
+      2.fs.writefile()
+      3.fs.appendfile()
+      4.fs.ulink()
+2.PATH MODULE:
+          ->Helps in working with file paths(folder navigation,extensins,file name )
+  INBUILT METHODS:
+  ---------------
+  1.path.join()
+  2.path.resolve
+  3.path.extname
+  4.path.basename()
+
+3.os
+
+4.HTTP:
+    ->Used to create servers(backend APIs)
+    ->Node.js can create a server without express using the http module
+                        
+    
