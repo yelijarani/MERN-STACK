@@ -1,0 +1,18 @@
+const express=require("express")
+const app=express();
+const PORT=5000;
+
+const connection=require("./config/db");
+
+connection()
+const studentRouter=require("./routes/studentRouter");
+
+
+app.use("/students",studentRouter);
+
+
+
+
+app.listen(PORT,()=>{
+   console.log("Server running on port",PORT);
+});
